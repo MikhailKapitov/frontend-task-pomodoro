@@ -4,6 +4,7 @@ import Timer from './Timer';
 export default function TaskWrapper({ task, onDelete, onUpdate }) {
   const [title, setTitle] = useState(task.title);
   const [description, setDescription] = useState(task.description);
+  const [deadline, setDeadline] = useState(task.deadline);
 
   const toggleCompleted = () => {
     onUpdate({ ...task, isCompleted: !task.isCompleted });
@@ -33,6 +34,13 @@ export default function TaskWrapper({ task, onDelete, onUpdate }) {
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           onBlur={() => onUpdate({ ...task, description })}
+        />
+        <input
+          type="text"
+          placeholder="Your task's deadline..."
+          value={deadline}
+          onChange={(e) => setDeadline(e.target.value)}
+          onBlur={() => onUpdate({ ...task, deadline })}
         />
       </div>
       

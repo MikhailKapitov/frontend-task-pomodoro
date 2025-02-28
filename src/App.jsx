@@ -12,6 +12,7 @@ export default function App() {
       id: uuidv4(),
       title: 'New task',
       description: '',
+      deadline: '',
       isCompleted: false,
       isRunning: false,
       isWorkPhase: true,
