@@ -36,7 +36,7 @@ export default function TaskWrapper({ task, onDelete, onUpdate }) {
           onBlur={() => onUpdate({ ...task, description })}
         />
         <input
-          type="text"
+          type="datetime-local"
           placeholder="Your task's deadline..."
           value={deadline}
           onChange={(e) => setDeadline(e.target.value)}
