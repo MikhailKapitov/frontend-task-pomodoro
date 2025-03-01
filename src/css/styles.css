@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
+    font-family: Arial, sans-serif;
+  }
 
 .header {
     background-color: #525151;
@@ -45,24 +45,123 @@
   }
 
   #content {
-    flex-grow: 1; 
-    min-height: 200px; 
     width: 90%;
-    max-width: 600px;
-    margin-top: 20px;
-    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 
-
-
+  .task-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #d2c5c5;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 900px;
+  }
   
+  .task {
+    flex: 5; 
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .task input[type="text"],
+  .task input[type="datetime-local"] {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .task-status-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .task-status-button {
+    background: green;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .task input[placeholder="Your task's description..."] {
+    height: 90px; 
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background: #fff;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+    resize: none; 
+    overflow: hidden; 
+    outline: none;
+  }
+  
+  .timer-container {
+    flex: 2; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .timer-display {
+    background: black;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .play-button {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .task-control {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+  }
+  
+  .task-control button {
+    background: red;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  
+
   .footer {
     background-color: #525151;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     width: 100%;
     position: fixed;
     bottom: 0;
+    margin-top: 10px;
   }
   
