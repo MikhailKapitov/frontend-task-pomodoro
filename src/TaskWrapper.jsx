@@ -47,7 +47,7 @@ export default function TaskWrapper({ task, onDelete, onUpdate }) {
       <Timer task={task} onUpdate={onUpdate} />
       
       <div className="task-control">
-        <button onClick={() => onDelete(task.id)}>
+        <button className="task-delete-button" onClick={() => onDelete(task.id)}>
           🗑️
         </button>
       </div>
