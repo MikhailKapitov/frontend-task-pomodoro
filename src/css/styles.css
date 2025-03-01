@@ -51,8 +51,8 @@
     flex-direction: column;
     gap: 15px;
     padding: 10px;
-    margin-bottom: 60px;
     margin: auto;
+    margin-bottom: 60px;
   }
 
   .task-wrapper {
@@ -82,6 +82,22 @@
     outline: none;
   }
   
+  .task-status-text{
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+    width: 20%;
+    text-align: center;
+  }
+
+  .task-completed .task-status-text{
+    background-color: green;
+  }
+
+  .task-running .task-status-text{
+    background-color: red;
+  }
+
   .task-status-bar {
     display: flex;
     align-items: center;
@@ -95,6 +111,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    background: linear-gradient(135deg, red 50%, green 50%);
   }
   
   .task input[placeholder="Your task's description..."] {
