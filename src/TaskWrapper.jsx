@@ -28,9 +28,8 @@ export default function TaskWrapper({ task, onDelete, onUpdate }) {
             🏁
           </button>
         </div>
-        <input
-          type="text"
-          placeholder="Your task's description..."
+        <textarea
+          placeholder="Your task's description..."  
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           onBlur={() => onUpdate({ ...task, description })}

@@ -189,7 +189,10 @@
     background: rgb(180, 170, 170); 
   }*/
   
-  
+  textarea{
+    width: 93%;
+    resize: vertical;
+  }
   
   .task-control {
     flex: 1; 
