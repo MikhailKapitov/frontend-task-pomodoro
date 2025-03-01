@@ -9,11 +9,10 @@
     color: white;
     padding: 15px;
     display: flex;
-    width: 100%;
     height: 80px;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 
   }
   
@@ -47,10 +46,10 @@
   #content {
     width: 90%;
     max-width: 800px;
-    margin: 20px auto; 
+    /* margin: 20px auto;  */
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    /* gap: 15px; */
   }
 
   .task-wrapper {
@@ -158,7 +157,7 @@
     background-color: #525151;
     color: white;
     text-align: center;
-    padding: 10px;
+    /* padding: 10px; */
     width: 100%;
     position: fixed;
     bottom: 0;
