@@ -246,6 +246,9 @@
       width: 70%;
       text-align: center;
     }
+    .timer {
+      margin: 10px;
+    }
   }
 
   @media (max-width: 480px) {
@@ -269,6 +272,9 @@
       width: 70%;
       text-align: center;
     }
+    .task-status-text {
+      width: 70%;
+    }
   }
 
   @media (max-width: 320px) {
@@ -282,6 +288,6 @@
     }
     .task input[type="text"], .task input[type="datetime-local"], .task-status-button {
       font-size: 10px;
-      padding: 5px;
+      padding: 10px;
     }
   }
