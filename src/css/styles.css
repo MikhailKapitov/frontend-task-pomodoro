@@ -143,26 +143,50 @@
   }
 
   .timer-timer {
-    background: rgb(161, 120, 120);
     color: white;
     padding: 8px 15px;
     border-radius: 5px;
     font-weight: bold;
   }
+
+  .timer-running .timer-timer{
+    background: rgb(29, 190, 47);
+  }
+
+  .timer-paused .timer-timer{
+    background: rgb(161, 120, 120);
+  }
+
+  .timer-status-text{
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+    width: 30%;
+    text-align: center;
+  }
+
+  .timer-resting .timer-status-text{
+    background-color: green;
+  }
+
+  .timer-working .timer-status-text{
+    background-color: red;
+  }
   
   .timer-button {
-    background: rgb(198, 186, 186);
-    color: black; 
+    background: transparent;
+/*    color: black; */
     border: none;
     padding: 5px 10px;
-    border-radius: 5px;
+/*    border-radius: 5px;*/
     cursor: pointer;
-    transition: background 0.3s ease-in-out;
+/*    transition: background 0.3s ease-in-out;*/
+    font-size: 30px;
   }
   
-  .timer-button:hover {
+/*  .timer-button:hover {
     background: rgb(180, 170, 170); 
-  }
+  }*/
   
   
   

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-const WORK_DURATION = 25 * 60;
-const REST_DURATION = 5 * 60;
+const WORK_DURATION = 5;
+const REST_DURATION = 5;
 
 export default function Timer({ task, onUpdate }) {
   const [timeLeft, setTimeLeft] = useState(task.isWorkPhase ? WORK_DURATION : REST_DURATION);
