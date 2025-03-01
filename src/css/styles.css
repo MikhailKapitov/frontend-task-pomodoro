@@ -143,50 +143,26 @@
   }
 
   .timer-timer {
+    background: rgb(161, 120, 120);
     color: white;
     padding: 8px 15px;
     border-radius: 5px;
     font-weight: bold;
   }
-
-  .timer-running .timer-timer{
-    background: rgb(29, 190, 47);
-  }
-
-  .timer-paused .timer-timer{
-    background: rgb(161, 120, 120);
-  }
-
-  .timer-status-text{
-    padding: 8px;
-    border-radius: 10px;
-    color: white;
-    width: 30%;
-    text-align: center;
-  }
-
-  .timer-resting .timer-status-text{
-    background-color: green;
-  }
-
-  .timer-working .timer-status-text{
-    background-color: red;
-  }
   
   .timer-button {
-    background: transparent;
-/*    color: black; */
+    background: rgb(198, 186, 186);
+    color: black; 
     border: none;
     padding: 5px 10px;
-/*    border-radius: 5px;*/
+    border-radius: 5px;
     cursor: pointer;
-/*    transition: background 0.3s ease-in-out;*/
-    font-size: 30px;
+    transition: background 0.3s ease-in-out;
   }
   
-/*  .timer-button:hover {
+  .timer-button:hover {
     background: rgb(180, 170, 170); 
-  }*/
+  }
   
   
   
@@ -225,4 +201,68 @@
     bottom: 0;
     margin-top: 10px;
   }
-  
+
+  @media (max-width: 480px) {
+    .task-control button {
+      width: 40px;
+      height: 40px;
+    }
+    .task-wrapper {
+      padding: 10px;
+      border-radius: 6px;
+      max-width: 400px;
+    }
+    .task input[type="text"],
+    .task input[type="datetime-local"] {
+      font-size: 12px;
+      padding: 6px;
+    }
+    .task-status-button {
+      padding: 4px 8px;
+      font-size: 12px;
+    }
+    .header {
+      height: 60px;
+      padding: 8px;
+    }
+    .header-control .add-task-button {
+      font-size: 16px;
+      padding: 8px;
+    }
+    .header-filter button {
+      padding: 5px 8px;
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 320px) {
+    .task-control button {
+      width: 30px;
+      height: 30px;
+    }
+    .task-wrapper {
+      padding: 8px;
+      border-radius: 5px;
+      max-width: 280px;
+    }
+    .task input[type="text"],
+    .task input[type="datetime-local"] {
+      font-size: 10px;
+      padding: 5px;
+    }
+    .task-status-button {
+      padding: 3px 6px;
+      font-size: 10px;
+    }
+    .header {
+      height: 50px;
+      padding: 5px;
+    }
+    .header-control .add-task-button {
+      font-size: 12px;
+      padding: 3px;
+    }
+    .header-filter button {
+      padding: 4px 6px;
+      font-size: 10px;
+    }
+  }
